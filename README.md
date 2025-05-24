@@ -117,6 +117,7 @@ Mengukur kemampuan model mendeteksi seluruh kasus positif (pembatalan sebenarnya
 Merupakan rata-rata harmonik dari precision dan recall, digunakan saat ingin mempertimbangkan keduanya secara seimbang.
 
 Hasil proyek berdasarkan metrik evaluasi
+
 ![Confusion Matrix - Logistic Regression](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/b0479ebbd6dc905313153ae4d1650c195f1b2751/images/hotel-cflog.png)
 - Accuracy: sangat tinggi
 - Recall: masih cukup baik (meski ada 239 false negatives)
