@@ -84,6 +84,7 @@ Korelasi negatif terlihat dengan:
 ![Cek Duplicate](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/a21611041807d6a3dc0adf3cb1a9214a703c382b/images/cek-duplicate.png)
 
 Terdapat sebanyak 31.994 baris data yang teridentifikasi duplikat. Lakukan imputasi terhadap entry data yang duplikat. Hasilnya sebagai berikut:
+
 ![Drop Duplicate](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/a21611041807d6a3dc0adf3cb1a9214a703c382b/images/drop-duplicate.png)
 
 Sudah tidak ada lagi data yang terduplikasi.
