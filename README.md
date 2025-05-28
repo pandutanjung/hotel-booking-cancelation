@@ -177,14 +177,14 @@ Merupakan rata-rata harmonik dari precision dan recall, digunakan saat ingin mem
 
 Hasil proyek berdasarkan metrik evaluasi
 
-![Confusion Matrix - Logistic Regression](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/b0479ebbd6dc905313153ae4d1650c195f1b2751/images/hotel-cflog.png)
+![Confusion Matrix - Logistic Regression](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/934860c18f82520881b069642ca3bc4dab80dd92/images/confu-lr.png)
 - Accuracy: sangat tinggi
-- Recall: masih cukup baik (meski ada 239 false negatives)
-- Precision: sangat baik (hanya 7 false positives)
+- Recall: masih cukup baik (meski ada 220 false negatives)
+- Precision: sangat baik (hanya 1 false positives)
 - F1-score: tinggi, tapi kalah dari Random Forest
 Logistic Regression memberikan performa yang solid, namun tidak mampu menangkap semua kasus pembatalan secara sempurna.
 
-![Confusion Matrix - Random Forest](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/b0479ebbd6dc905313153ae4d1650c195f1b2751/images/hotel-cfrf.png)
+![Confusion Matrix - Random Forest](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/934860c18f82520881b069642ca3bc4dab80dd92/images/confu-rf.png)
 - Accuracy = 100%
 - Recall = 100%
 - Precision = 100%
