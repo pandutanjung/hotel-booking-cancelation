@@ -114,12 +114,16 @@ Menggunakan StandardScaler untuk menyesuaikan skala semua fitur
 ### Logistic Regression 
 Logistic Regression merupakan algoritma yang sederhana, cepat dilatih, dan sangat cocok digunakan sebagai model baseline dalam masalah klasifikasi. Salah satu keunggulan utamanya adalah kemampuannya dalam memberikan interpretasi yang jelas terhadap pengaruh masing-masing fitur melalui nilai koefisien. Hal ini menjadikan Logistic Regression sangat berguna ketika interpretabilitas menjadi prioritas utama. Namun, model ini memiliki keterbatasan karena hanya mampu menangkap hubungan linear antar fitur, sehingga kurang efektif dalam menangani pola kompleks atau non-linear. Berikut adalah cara kerjanya:
 1. Model menghitung kombinasi linier dari fitur
+   
 ![Kombinasi Linier](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/3d567ff6693fb8c3097f3d75aeb258a80b0805bb/images/kombinasi-linier.png)
-    Di sini, 𝛽 adalah bobot/koefisien, dan 𝑥 adalah nilai fitur.
-2. Hasil linier 𝑧 kemudian diubah menjadi nilai antara 0 dan 1 menggunakan fungsi sigmoid
+
+Di sini, 𝛽 adalah bobot/koefisien, dan 𝑥 adalah nilai fitur.
+3. Hasil linier 𝑧 kemudian diubah menjadi nilai antara 0 dan 1 menggunakan fungsi sigmoid
+
 ![Fungsi Sigmoid](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/3d567ff6693fb8c3097f3d75aeb258a80b0805bb/images/sigmoid-function.png)
+
 Hasil ini mewakili probabilitas prediksi kelas 1 misalnya pembatalan terjadi.
-3. Klasifikasi Berdasarkan Threshold
+4. Klasifikasi Berdasarkan Threshold
 - Jika probabilitas ≥ 0.5 maka kelas 1 (Canceled)
 - Jika probabilitas < 0.5 maka kelas 0 (Not Canceled)
 4. Model mencari bobot 𝛽 terbaik dengan meminimalkan log loss 
@@ -169,6 +173,7 @@ Merupakan rata-rata harmonik dari precision dan recall, digunakan saat ingin mem
 ![F1 Score](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/4c2b6019eb34d161735ae477bb86ef00b4a4114e/images/f1.png)
 
 Hasil proyek berdasarkan metrik evaluasi
+
 ![Confusion Matrix - Logistic Regression](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/b0479ebbd6dc905313153ae4d1650c195f1b2751/images/hotel-cflog.png)
 - Accuracy: sangat tinggi
 - Recall: masih cukup baik (meski ada 239 false negatives)
