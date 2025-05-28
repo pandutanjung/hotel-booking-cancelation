@@ -118,14 +118,17 @@ Logistic Regression merupakan algoritma yang sederhana, cepat dilatih, dan sanga
 ![Kombinasi Linier](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/3d567ff6693fb8c3097f3d75aeb258a80b0805bb/images/kombinasi-linier.png)
 
 Di sini, 𝛽 adalah bobot/koefisien, dan 𝑥 adalah nilai fitur.
-3. Hasil linier 𝑧 kemudian diubah menjadi nilai antara 0 dan 1 menggunakan fungsi sigmoid
+
+2. Hasil linier 𝑧 kemudian diubah menjadi nilai antara 0 dan 1 menggunakan fungsi sigmoid
 
 ![Fungsi Sigmoid](https://raw.githubusercontent.com/pandutanjung/hotel-booking-cancelation/3d567ff6693fb8c3097f3d75aeb258a80b0805bb/images/sigmoid-function.png)
 
 Hasil ini mewakili probabilitas prediksi kelas 1 misalnya pembatalan terjadi.
-4. Klasifikasi Berdasarkan Threshold
+
+3. Klasifikasi Berdasarkan Threshold
 - Jika probabilitas ≥ 0.5 maka kelas 1 (Canceled)
 - Jika probabilitas < 0.5 maka kelas 0 (Not Canceled)
+  
 4. Model mencari bobot 𝛽 terbaik dengan meminimalkan log loss 
 
 Pada proyek ini, Mmeskipun performanya cukup baik namun Logistic Regression menghasilkan 239 kesalahan klasifikasi untuk kasus pembatalan (false negatives) dan 7 prediksi positif yang salah (false positives). Hal ini menunjukkan bahwa Logistic Regression masih kurang optimal dalam mendeteksi kasus pembatalan, yang justru menjadi fokus utama dalam konteks bisnis hotel.
